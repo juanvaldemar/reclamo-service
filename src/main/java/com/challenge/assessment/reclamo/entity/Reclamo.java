@@ -18,6 +18,9 @@ public class Reclamo {
     @Column(name= "cod_reclamo")
     private String cod_reclamo;
 
+    @Column(name= "cod_producto")
+    private String cod_producto;
+
     @Column(name= "motivo_reclamo")
     private String motivo_reclamo;
 
