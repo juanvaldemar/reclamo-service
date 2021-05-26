@@ -41,6 +41,21 @@ public class ReclamoController {
     }
 
 
+    @RequestMapping(value = "/reclamo/{id}", method = RequestMethod.GET)
+    public ResponseEntity<List<Reclamo>> findAllByNumeroDocumento(@PathVariable("id") String id){
+
+
+
+        List<Reclamo> reclamos = new ArrayList<>();
+
+        reclamos = reclamoService.findAllByCod(id);
+
+        return new ResponseEntity<>(reclamos, HttpStatus.OK);
+
+    }
+
+
+
 
 
 

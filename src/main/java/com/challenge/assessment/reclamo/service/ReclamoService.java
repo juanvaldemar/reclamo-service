@@ -11,5 +11,6 @@ public interface ReclamoService {
     Reclamo save(Reclamo reclamo);
     List<Reclamo> findAll();
     void findDeleteAll();
+    List<Reclamo> findAllByCod(String id);
 
 }

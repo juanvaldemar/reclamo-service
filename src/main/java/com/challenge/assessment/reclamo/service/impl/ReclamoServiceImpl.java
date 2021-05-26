@@ -30,4 +30,10 @@ public class ReclamoServiceImpl implements ReclamoService {
         reclamoServiceRepositoy.deleteAll();
     }
 
+    @Override
+    public List<Reclamo> findAllByCod(String id) {
+        return reclamoServiceRepositoy.findAllByCod(id);
+
+    }
+
 }
